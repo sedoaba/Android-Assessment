@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HaloStorm</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="goto_play_music">Music Player</string>
+    <string name="login">Login</string>
+    <string name="txtdesc">Description</string>
+    <string name="txthead">Heaing</string>
+    <string name="stringheading">Heading</string>
+    <string name="stringlongDesc">Long Description</string>
+    <string name="stringplay">Play</string>
+    <string name="stringclose">Close</string>
+    <string name="stringName">Name</string>
+    <string name="sringSubmit">Submit</string>
+    <string name="stringwelcome">Welcome user</string>
+
+</resources>
