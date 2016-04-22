@@ -22,6 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:name="com.halostorm.Playlist_Screen"
+            android:label="Playlist" >
+        </activity>
+        
     </application>
 
 </manifest>
