@@ -4,6 +4,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical" 
     android:background="#6797df">
-    
+
+    <ListView
+        android:id="@+id/listHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
 
 </LinearLayout>

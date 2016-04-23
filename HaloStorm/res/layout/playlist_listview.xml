@@ -6,10 +6,15 @@
 
     <ImageButton
         android:id="@+id/btnselector"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
         android:contentDescription="TODO"
-        android:src="@drawable/ic_imageholder"
+        android:src="@drawable/track_1"
+        android:scaleType="centerCrop"
+        android:background="#cccccc"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         tools:ignore="HardcodedText,ContentDescription" />
 
     <TextView
@@ -17,7 +22,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="2dp"
         android:text="@string/txtdesc" />
 
 </LinearLayout>
