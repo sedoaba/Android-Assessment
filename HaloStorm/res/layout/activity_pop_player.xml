@@ -10,39 +10,40 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="24dp"
         android:text="@string/stringheading"
-        android:textColor="#6f1d00"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <TextView
-        android:id="@+id/txtlong_dec"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtheading"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp"
-        android:text="@string/stringlongDesc"
-        android:textColor="#ecece5"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#6f1d00" />
 
     <Button
-        android:id="@+id/btnplay"
+        android:id="@+id/btnPlay"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/txtheading"
-        android:layout_below="@+id/txtlong_dec"
-        android:layout_marginRight="52dp"
-        android:layout_marginTop="18dp"
+        android:layout_below="@+id/txtlong_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:background="#ffffff"
         android:text="@string/stringplay" />
 
     <Button
         android:id="@+id/btnclose"
+        android:layout_marginTop="5dp"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/btnplay"
-        android:layout_alignLeft="@+id/txtheading"
-        android:layout_marginLeft="46dp"
+        android:layout_below="@+id/btnPlay"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
         android:text="@string/stringclose" />
+
+    <TextView
+        android:id="@+id/txtlong_desc"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtheading"
+        android:text="@string/stringlongDesc"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ecece5" />
 
 </RelativeLayout>
