@@ -15,5 +15,6 @@
     <string name="stringName">Name</string>
     <string name="sringSubmit">Submit</string>
     <string name="stringwelcome">Welcome user</string>
+    <string name="stringback">Back</string>
 
 </resources>

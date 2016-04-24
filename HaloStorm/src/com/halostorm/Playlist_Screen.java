@@ -1,32 +1,18 @@
 package com.halostorm;
 
-import java.io.ObjectOutputStream.PutField;
-import java.security.AccessControlContext;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 
 
-import android.R.raw;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.AvoidXfermode;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.Adapter;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.AdapterView.OnItemClickListener;
 
 public class Playlist_Screen extends Activity implements View.OnClickListener{
 	
@@ -47,6 +33,7 @@ public class Playlist_Screen extends Activity implements View.OnClickListener{
 			R.drawable.track_10
 	};
 	
+	//Arraylist for descriptions
 	String[] description = new String[]{
 		"Jhené Aiko was featured Mail Music on this track, this came about when Mali Music where on a tour in SA.",
 		"Local Artist from Boksburg hitting the hot waves with her hit single Let you go.",
@@ -60,6 +47,7 @@ public class Playlist_Screen extends Activity implements View.OnClickListener{
 		"No Way by Young Thung with his out of this world voice, making hits like no other artist. No way better love it"
 	};
 	
+	//Arraylist for headings
 	String[] heading = new String[]{
 		"Mail Musicft. Jhené Aiko",
 		"local Artist",
@@ -73,6 +61,7 @@ public class Playlist_Screen extends Activity implements View.OnClickListener{
 		"Young Thug - No Way"
 	};
 	
+	//Arraylist for tracks
 	int[] track = new int[]{
 			R.raw.track_1,
 			R.raw.track_2,
@@ -118,11 +107,11 @@ public class Playlist_Screen extends Activity implements View.OnClickListener{
 		
 		
 	}
-
+	//parseing data into the pop-up window when clicking the track image
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
-		Intent Activityplayer = new Intent(Playlist_Screen.this, Player.class);
+		Intent Activityplayer = new Intent(getApplicationContext(), Player.class);
 		Activityplayer.putExtra("Heading", ""+heading[(Integer) v.getTag()]);
 		Activityplayer.putExtra("Description", ""+description[(Integer) v.getTag()]);
 		Activityplayer.putExtra("Track", ""+v.getTag());

@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.util.DisplayMetrics;
 
 
@@ -37,6 +36,7 @@ public class Player extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_pop_player);
 		
+		//pop-up window size
 		DisplayMetrics dm = new DisplayMetrics();
 		getWindowManager().getDefaultDisplay().getMetrics(dm);
 		int width = dm.widthPixels;
@@ -48,14 +48,19 @@ public class Player extends Activity{
 		stringDescription = (TextView)findViewById(R.id.txtlong_desc);
 		stringHeading = (TextView)findViewById(R.id.txtheading);
 		
+		//getting parsed information from the playlist screen heading,description and track
 		extraheading = getIntent().getStringExtra("Heading");
 		extradescription = getIntent().getStringExtra("Description");
 		Tracknumber = getIntent().getStringExtra("Track");
+		
+		//converting String into integer
 		trackNumber = Integer.parseInt(Tracknumber.toString());
 		
+		//setting the textview to the parsed information
 		stringHeading.setText(extraheading);
 		stringDescription.setText(extradescription);
 		
+		//event listener for the close button, the button will stop the song from playing and close the pop-up window
 		btnClose.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -66,6 +71,7 @@ public class Player extends Activity{
 			}
 		});
 		
+		//event listener for the play button, will play a song selected on from the playlist
 		btnPlayer.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -79,7 +85,7 @@ public class Player extends Activity{
 		
 	}
 	
-	
+	//mediaplayer creation 
 	public void initializeViews(){
 		mediaPlayer = MediaPlayer.create(this, track[trackNumber]);
 	}

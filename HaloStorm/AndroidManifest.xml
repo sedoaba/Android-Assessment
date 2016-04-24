@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="9"
         android:targetSdkVersion="18" />
 
     <application
@@ -33,6 +33,18 @@
         <activity
             android:name="com.halostorm.Player"
             android:theme="@style/AppTheme.co"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.halostorm.Login_Screen"
+            android:label="Login" 
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.halostorm.Dashboard_Screen"
+            android:label="Dashboard" 
             android:screenOrientation="portrait">
         </activity>
         

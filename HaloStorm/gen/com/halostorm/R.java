@@ -35,18 +35,20 @@ public final class R {
         public static final int track_9=0x7f02000b;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000c;
-        public static final int btnPlay=0x7f090007;
-        public static final int btnSubmit=0x7f090002;
-        public static final int btnclose=0x7f090009;
-        public static final int btnlogin=0x7f090004;
-        public static final int btnplayer=0x7f090003;
-        public static final int btnselector=0x7f09000a;
-        public static final int editText1=0x7f090001;
-        public static final int listHolder=0x7f090005;
-        public static final int txtheading=0x7f090006;
-        public static final int txtlong_desc=0x7f090008;
-        public static final int txtmusic_desc=0x7f09000b;
+        public static final int action_settings=0x7f09000e;
+        public static final int btnPlay=0x7f090009;
+        public static final int btnSubmit=0x7f090004;
+        public static final int btnback=0x7f090001;
+        public static final int btnclose=0x7f09000b;
+        public static final int btnclosed=0x7f090002;
+        public static final int btnlogin=0x7f090006;
+        public static final int btnplayer=0x7f090005;
+        public static final int btnselector=0x7f09000c;
+        public static final int editusername=0x7f090003;
+        public static final int listHolder=0x7f090007;
+        public static final int txtheading=0x7f090008;
+        public static final int txtlong_desc=0x7f09000a;
+        public static final int txtmusic_desc=0x7f09000d;
         public static final int txtwelcome=0x7f090000;
     }
     public static final class layout {
@@ -80,6 +82,7 @@ public final class R {
         public static final int login=0x7f060004;
         public static final int sringSubmit=0x7f06000c;
         public static final int stringName=0x7f06000b;
+        public static final int stringback=0x7f06000e;
         public static final int stringclose=0x7f06000a;
         public static final int stringheading=0x7f060007;
         public static final int stringlongDesc=0x7f060008;

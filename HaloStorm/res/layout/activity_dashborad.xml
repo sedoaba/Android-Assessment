@@ -12,4 +12,16 @@
         android:text="@string/stringwelcome"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stringback" />
+
+    <Button
+        android:id="@+id/btnclosed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stringclose" />
+
 </LinearLayout>
