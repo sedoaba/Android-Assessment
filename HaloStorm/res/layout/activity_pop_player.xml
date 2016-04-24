@@ -13,7 +13,7 @@
         android:layout_marginTop="24dp"
         android:text="@string/stringheading"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#6f1d00" />
+        android:textColor="#cd0000" />
 
     <Button
         android:id="@+id/btnPlay"
