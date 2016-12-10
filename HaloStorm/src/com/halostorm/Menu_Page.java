@@ -1,7 +1,9 @@
 package com.halostorm;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.view.Menu;
@@ -40,21 +42,28 @@ public class Menu_Page extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				SharedPreferences preferences =getSharedPreferences("temp", getApplicationContext().MODE_PRIVATE);
-				String username = preferences.getString("Name",null);
-				if(username.equals(""))
+				try
 				{
-					
-					Intent login= new Intent(getApplicationContext(), Login_Screen.class);
-					
-					startActivity(login);
+					getApplicationContext();
+					SharedPreferences preferences =getSharedPreferences("temp", Context.MODE_PRIVATE);
+					String username = preferences.getString("Name","");
+					if(username.toString().isEmpty())
+					{
+						
+						Intent login= new Intent(getApplicationContext(), Login_Screen.class);
+						startActivity(login);
+					}
+					else
+					{
+						Intent Dashboard = new Intent(getApplicationContext(), Dashboard_Screen.class);
+						String pushlog = "1";
+						Dashboard.putExtra("log", pushlog);
+						startActivity(Dashboard);
+					}
 				}
-				else
+				catch(Exception e)
 				{
-					Intent Dashboard = new Intent(getApplicationContext(), Dashboard_Screen.class);
-					String pushlog = "1";
-					Dashboard.putExtra("log", pushlog);
-					startActivity(Dashboard);
+					e.printStackTrace();
 				}
 			}
 		});
